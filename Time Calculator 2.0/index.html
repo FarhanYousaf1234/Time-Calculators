@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+    
+
+</head>
+
+<body>
+    <div id="calculator">
+        <h1>REMAINING TIME</h1>
+        <label for="entryHours">Entry Hours:</label><br><br>
+        <input type="time" id="entryHours"><br><br>
+
+        <label for="exitHours">Exit Hours:</label><br><br>
+        <input type="time" id="exitHours"><br><br>
+
+        <p>Result: Time Worked Hours</p>
+        <div class="results-box">
+            <span id="totalTime"></span>
+        </div>
+
+        <div class="radio-container">
+            <p>Result: Remaining Time</p>
+            <div class="results-box">
+                <span id="timeRemaining"></span>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="default24" name="defaultTime" value="24" checked>
+                <label for="default24">24H00 MN(Result default)</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="default48" name="defaultTime" value="48">
+                <label for="default48">48H00 MN</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="default96" name="defaultTime" value="96">
+                <label for="default96">96H00 MN</label>
+            </div>
+        </div>
+
+        <button onclick="calculateTime()">Envoyer</button>
+    </div>
+
+    <div id="calculator">
+        <h1>REMAINING TIME Advanced Option</h1>
+        <label for="entryDate">Entry Date:</label><br><br>
+        <input type="date" id="entryDate"><br><br>
+        <label for="entryTime">Entry Time:</label><br><br>
+        <input type="time" id="entryTime"><br><br>
+
+        <label for="exitDate">Exit Date:</label><br><br>
+        <input type="date" id="exitDate"><br><br>
+        <label for="exitTime">Exit Time:</label><br><br>
+        <input type="time" id="exitTime"><br><br>
+
+        <p>Result: Time Worked</p>
+        <div class="results-box">
+            <span id="totalTimeAdvanced"></span>
+        </div>
+
+        <div class="radio-container">
+            <p>Result: Remaining Time</p>
+            <div class="results-box">
+                <span id="timeRemainingAdvanced"></span>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="default24Advanced" name="defaultTimeAdvanced" value="24" checked>
+                <label for="default24Advanced">24H00 MN(Result default)</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="default48Advanced" name="defaultTimeAdvanced" value="48">
+                <label for="default48Advanced">48H00 MN</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="default96Advanced" name="defaultTimeAdvanced" value="96">
+                <label for="default96Advanced">96H00 MN</label>
+            </div>
+        </div>
+
+        <button onclick="calculateTimeAdvanced()">Envoyer</button>
+    </div>
+    <div class="footer">
+        <p class="copy_right"> 2023 &copy; hyndra.fr.All rights reserved.</p>
+       </div>
+    
+    
+</body>
+
+</html>

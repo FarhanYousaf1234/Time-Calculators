@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(209, 234, 225);
+    font-family: Arial, sans-serif;
+    text-align: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#calculator {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+input[type="time"] {
+    padding: 8px;
+    width: 8%;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    width: 30%;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+}
+
+.results-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+    display: block;
+    margin: auto;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results-box {
+    width: 30%;
+}
+
+.radio-item {
+    margin-left: 50%;
+}
+
+.footer{
+    width: 100%;
+    background-color: #000;
+    padding: 2px 0px;
+    margin-top: 30px;
+}
+.copy_right{
+    color: white;
+    text-align: center;
+    margin: 5px 0px;    
+}
+
+@media (max-width: 712px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="time"],
+    input[type="date"] {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .results-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .radio-item {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    button {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
