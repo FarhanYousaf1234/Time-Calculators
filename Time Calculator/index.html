@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div id="calculator">
+        <h1>REMAINING TIME</h1>
+        <label> Entry Hours</label>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+        </div>
+        <div class="input-container">
+            <input type="number" id="entryHours">
+            <input type="number" id="entryMinutes">
+            <input type="number" id="entrySeconds">
+        </div>
+        <label> Exit Hours</label>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+        </div>
+        <div class="input-container">
+            <input type="number" id="exitHours">
+            <input type="number" id="exitMinutes">
+            <input type="number" id="exitSeconds">
+        </div>
+
+        <p>Result: Time Worked Hours</p>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+        </div>
+        <div class="input-container">
+            <input type="text" id="totalHours">
+            <input type="text" id="totalMinutes">
+            <input type="text" id="totalSeconds">
+        </div>
+
+        <p>Result: Remaining Time</p>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+
+        </div>
+        <div class="input-container">
+            <input type="text" id="remainingHours">
+            <input type="text" id="remainingMinutes">
+            <input type="text" id="remainingSeconds">
+
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="default24" name="advancedDefaultTime" value="24" checked>
+            <label for="default24">24H00 MN(Result Default)</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="default48" name="advancedDefaultTime" value="48">
+            <label for="default48">48H00 MN</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="default96" name="advancedDefaultTime" value="96">
+            <label for="default96">96H00 MN</label>
+        </div>
+
+
+        <button onclick="calculateTime()">Resultat</button>
+    </div>
+    <div id="calculator">
+        <h1>REMAINING TIME advanced option </h1>
+        <label> Date Entry </label>
+
+        <div class="input-container">
+
+
+            <input type="date" id="entryDate"><br><br>
+
+        </div>
+        <label> Hours Entry</label>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+        </div>
+        <div class="input-container">
+            <input type="number" id="entryHour">
+            <input type="number" id="entryMinute">
+            <input type="number" id="entrySecond">
+        </div>
+
+        <label> Date Exit</label>
+
+        <div class="input-container">
+            <input type="date" id="exitDate"><br><br>
+
+        </div>
+        <label> Hours Exit</label>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+        </div>
+        <div class="input-container">
+            <input type="number" id="exitHour">
+            <input type="number" id="exitMinute">
+            <input type="number" id="exitSecond">
+        </div>
+
+        <p>Result: Time Worked Hours</p>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+        </div>
+        <div class="input-container">
+            <input type="text" id="totalHour">
+            <input type="text" id="totalMinute">
+            <input type="text" id="totalSecond">
+        </div>
+
+        <p>Result: Remaining Time</p>
+        <div class="input-container">
+            <label>Hours:</label>
+            <label>Minutes:</label>
+            <label>Seconds:</label>
+
+        </div>
+        <div class="input-container">
+            <input type="text" id="remainingHour">
+            <input type="text" id="remainingMinute">
+            <input type="text" id="remainingSecond">
+
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="default24" name="defaultTime" value="24" checked>
+            <label for="default24">24H00 MN (Résultat par défaut)</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="default48" name="defaultTime" value="48">
+            <label for="default48">48H00 MN</label>
+        </div>
+        <div class="radio-item">
+            <input type="radio" id="default96" name="defaultTime" value="96">
+            <label for="default96">96H00 MN</label>
+        </div>
+
+
+        <button onclick="calculateAdvancedTime()">Resultat</button>
+    </div>
+    <div class="footer">
+        <p class="copy_right"> 2023 &copy; hyndra.fr.All rights reserved.</p>
+    </div>
+</body>
+
+</html>
